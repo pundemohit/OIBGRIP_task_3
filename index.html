@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Temperature Coverter</title>
+    
+</head>
+
+<body>
+
+    <div class="container" id="con" style="background-color: bisque;">
+        <form id="tempCalc" onsubmit="calculateTemp(); return false">
+            <label for="temp"> <b> Please enter the temperature you'd like to Covert </label>
+            <br>
+            <br>
+            <input type="number" name="temp" id="temp" placeholder="Enter Temperature">
+
+            <select name="temp_diff" id="temp_diff">
+                <option value="cel"><b>°Celsius</option>
+                <option value="fah"><b>°Fahrenheit</option>
+            </select>
+            <br>
+            
+            <button type="submit" name="temp" id="submit">Convert</button><br>
+            <span id="resultContainer" style="font-size: x-large;" ></span>
+        </form>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
